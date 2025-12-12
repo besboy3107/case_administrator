@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "duckdb": {
+      "command": "python",
+      "args": ["mcp_servers/duckdb_server.py"],
+      "cwd": "${workspaceFolder}"
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server-supabase"],
+      "env": {
+        "SUPABASE_URL": "https://YOUR_PROJECT_ID.supabase.co",
+        "SUPABASE_SERVICE_ROLE_KEY": "YOUR_SERVICE_ROLE_KEY"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
+      }
+    }
+  }
+}
+

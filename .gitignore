@@ -50,3 +50,8 @@ Untitled
 
 # Cursor IDE
 .cursor/
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
+data/

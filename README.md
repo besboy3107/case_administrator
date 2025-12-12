@@ -32,11 +32,17 @@
 │   ├── database.py       # Работа с БД
 │   └── env_loader.py     # Загрузка переменных окружения
 ├── logs/                  # Директория для логов (создается автоматически)
+├── mcp_servers/          # MCP серверы
+│   ├── __init__.py
+│   └── duckdb_server.py  # DuckDB MCP сервер
 ├── main.py               # Точка входа
 ├── requirements.txt      # Зависимости Python
 ├── Dockerfile           # Образ для контейнеризации бота
 ├── docker-compose.yml   # Конфигурация Docker Compose
-└── .env_example         # Пример файла с переменными окружения
+├── .env_example         # Пример файла с переменными окружения
+├── mcp-config.json      # Конфигурация MCP серверов
+├── run_duckdb_mcp.py    # Wrapper для запуска DuckDB MCP
+└── *.bat, *.ps1         # Вспомогательные скрипты для работы с Docker
 ```
 
 ## Установка и запуск
